@@ -53,7 +53,6 @@ public class SwaggerConfig {
 		} catch (Exception e) {
 			token = "";
 		}
-
 		return new SecurityConfiguration(null, null, null, null, "Bearer " + token, ApiKeyVehicle.HEADER,
 				"Authorization", ",");
 	}
